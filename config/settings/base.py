@@ -109,7 +109,7 @@ MANAGERS = ADMINS
 # ------------------------------------------------------------------------------
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#databases
 DATABASES = {
-    'default': env.db('DATABASE_URL', default='postgres://localhost/weather'),
+    'default': env.db('DATABASE_URL', default='postgres://postgres:password@localhost/weather'),
 }
 DATABASES['default']['ATOMIC_REQUESTS'] = True
 
